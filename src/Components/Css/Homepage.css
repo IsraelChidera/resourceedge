@@ -1,0 +1,23 @@
+.homepage {
+    display: flex;
+    position: relative;
+}
+
+.homepage .homepage_details {
+    display: flex;
+    padding-top: 9rem;
+    padding-left: 7rem;
+}
+
+.homepage .homepage_image img {
+    width: 900px;
+    height: 709.83px;
+    /* position: absolute; */
+}
+
+.homepage_details h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+    margin-bottom: 1rem;
+}
