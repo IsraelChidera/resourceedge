@@ -1,0 +1,30 @@
+footer {
+    background: #091E42;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    color: #fafbfc;
+}
+
+.footer_socials {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: right;
+}
+
+.footer_socials li {
+    padding-right: 10px;
+}
+
+.footer_socials li a {
+    color: #FAFBFC;
+}
+
+.footer_socials li a:hover {
+    color: #FF8B00;
+}
+
+footer p {
+    font-size: 14px;
+}

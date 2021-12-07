@@ -1,0 +1,113 @@
+.feature, .feature_2 {
+    
+    background: #fff;
+}
+
+.feature_sample_img, .feature_sample_img_2 {
+    position: relative;
+    z-index: 1;
+    /* width: 100%; */
+    text-align: center;
+}
+
+.feature_title_grid, .feature_title_grid_2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 6rem;
+    grid-gap: 3rem;
+}
+
+.feature_title h3, .feature_title_2 h3  {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 135%;
+    color: #091E42;
+}
+
+.feature_title p, .feature_title_2 p {
+    font-weight: 450;
+    font-size: 15px;
+    margin-top: 1rem;
+    line-height: 24px;
+    color: #5E6C84;
+}
+
+.feature h3, .feature_2 h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #091E42;
+}
+
+.feature p, .feature_2 p {
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5E6C84;
+}
+
+.feature .feature_img, .feature_2 .feature_img_2  {
+    width: 53px;
+    height: 53px;
+}
+
+.feature_2 img {
+
+}
+
+
+/* Background layers */
+.background_layer {
+    position: absolute;
+    width: 143.06px;
+    height: 680.97px;
+    left: 13.52px;
+    top: 2px;
+    background: rgba(109, 184, 255, 0.04);
+    border-radius: 157.5px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.background_layer2 {
+    position: absolute;
+    width: 143.06px;
+    height: 680.97px;
+    left: 167.13px;
+    top: 29.32px;    
+    background: rgba(109, 184, 255, 0.04);
+    border-radius: 157.5px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.background_layer3 {
+    position: absolute;
+    width: 143.06px;
+    height: 680.97px;
+    left: 529.94px;
+    top: 8.04px;
+    z-index: -1;
+    background: rgba(109, 184, 255, 0.04);
+    border-radius: 157.5px;
+    transform: rotate(45deg);
+}
+
+.background_layer4 {
+    position: absolute;
+    /* width: 100%; */
+    /* height: 100px; */
+    top: -40px;
+    right: 0;
+    z-index: -1;
+}
+
+.background_layer5 {
+    position: absolute;
+    /* width: 100%; */
+    top: 240px;
+    right: 0;
+    z-index: -1;
+    /* height: 100px; */
+} 
+

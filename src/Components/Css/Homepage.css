@@ -1,11 +1,13 @@
 .homepage {
     display: flex;
-    position: relative;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 
 .homepage .homepage_details {
     display: flex;
-    padding-top: 9rem;
+    padding-top: 9rem; 
     padding-left: 7rem;
 }
 
@@ -20,4 +22,10 @@
     font-size: 48px;
     line-height: 57.6px;
     margin-bottom: 1rem;
+    color: #091E42;
+}
+
+.homepage_details p{
+    color: #344563;
+    line-height: 24px;
 }

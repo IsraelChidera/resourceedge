@@ -1,5 +1,5 @@
 nav {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     padding: 1.2rem 7rem;
 }
@@ -7,9 +7,16 @@ nav {
 ul {
     list-style: none;
 }
-
-ul li a {
+ 
+.nav_list li a {
     text-decoration: none;
+    color: #091E42; 
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in;
 }
 
 nav .first_nav_section {
@@ -33,4 +40,22 @@ nav .first_nav_section div{
 .logo_img {
     height: 24px;
     width: 154px;
+}
+
+.nav_list .sign_in {
+    padding-left: 0.2rem;
+}
+
+.nav_list .sign_in a {
+    background: #0052CC;
+    padding: 10px 12px;
+    mix-blend-mode: normal;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.nav_list .sign_in a:hover {
+    background: #091E42;
+    transition: all 0.3s ease-in;
+    text-decoration: none;
 }

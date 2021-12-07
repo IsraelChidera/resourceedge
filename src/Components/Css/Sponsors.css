@@ -1,0 +1,19 @@
+.sponsors {
+    margin-top: 2rem;
+}
+
+.sponsors_container {
+    position: relative;
+}
+
+.sponsor_background {
+    position: absolute;
+    bottom: 0;
+}
+
+.sponsors_img_flexed {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem;
+}

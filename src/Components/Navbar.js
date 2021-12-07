@@ -3,15 +3,17 @@ import logo from './Assets/logo_svg.svg';
 import './Css/Navbar.css'
 
 function Navbar() {
-    return (
-        <nav>
+    return ( 
+        <nav> 
             <div className="first_nav_section">
                 <div>
-                    <img 
-                        src={logo} 
-                        alt="logo"
-                        className="logo_img"
-                    />
+                    <a href="#">
+                        <img 
+                            src={logo} 
+                            alt="logo"
+                            className="logo_img"
+                        />
+                    </a>
                 </div>
 
                 <div>
@@ -34,12 +36,15 @@ function Navbar() {
             <div>
                 <ul className="nav_list ">
                     <li>
-                        <a href="#">
+                        <a 
+                            style={{color: '#A5ADBA'}}
+                            href="#"
+                        >
                             Sign up
                         </a>
                     </li>
 
-                    <li>
+                    <li className="sign_in">
                         <a href="#">
                             Sign in
                         </a>
