@@ -1,33 +1,34 @@
 import React from 'react';
 import logo from './Assets/logo_svg.svg';
-import './Css/Navbar.css'
+import './Css/Navbar.css';
+import {Link} from 'react-router-dom';
 
 function Navbar() {
     return ( 
         <nav> 
             <div className="first_nav_section">
                 <div>
-                    <a href="#">
+                    <Link to="/">
                         <img 
                             src={logo} 
                             alt="logo"
                             className="logo_img"
                         />
-                    </a>
+                    </Link>
                 </div>
 
                 <div>
                     <ul className="nav_list">
                         <li>
-                            <a href="#">
+                            <Link to="#feature">
                                 Features
-                            </a>
+                            </Link>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <Link to="#about">
                                 About
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -36,18 +37,18 @@ function Navbar() {
             <div>
                 <ul className="nav_list ">
                     <li>
-                        <a 
+                        <Link 
                             style={{color: '#A5ADBA'}}
-                            href="#"
+                            to="/auth"
                         >
                             Sign up
-                        </a>
+                        </Link>
                     </li>
 
                     <li className="sign_in">
-                        <a href="#">
+                        <Link to="/auth">
                             Sign in
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

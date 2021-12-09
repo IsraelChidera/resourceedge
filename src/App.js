@@ -1,14 +1,53 @@
 import './App.css';
-// import About from './Components/About';
-// import Homepage from './Components/Homepage';
-// import Navbar from './Components/Navbar';
+import Auth from './Pages/Auth';
 import LandingPage from './Pages/LandingPage';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import PasswordInput from './Components/PasswordInput';
+import ForgotPassword from './Components/ForgotPassword';
+import ResetSuccess from './Components/ResetSuccess';
+import PasswordReset from './Components/PasswordReset';
+import PasswordResetSuccess from './Components/PasswordResetSuccess';
+import Dashboard from './Pages/Dashboard';
 
 function App() {
   return (
-    <div>
-      <LandingPage/>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/">
+            < LandingPage />            
+          </Route>
+
+          <Route path="/auth">
+            < Auth />
+          </Route>
+
+          <Route path="/dashboard">
+            < Dashboard />
+          </Route>
+
+          <Route path="/passwordInput">
+            < PasswordInput />
+          </Route>
+
+          <Route path="/forgotPassword">
+            < ForgotPassword />
+          </Route>
+
+          <Route path="/passwordResetviaemail">
+            < ResetSuccess />
+          </Route>
+
+          <Route path="/resetpassword">
+            <PasswordReset/>
+          </Route>
+
+          <Route path="/passwordresetsuccess">
+            < PasswordResetSuccess />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

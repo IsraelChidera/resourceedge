@@ -1,0 +1,110 @@
+.dashboard {
+    height: 100vh;
+}
+
+.dashboard_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(193, 199, 208, 0.4);
+}
+
+.dashboard_nav_flex {
+    display: flex;
+}
+
+.logo_flex {
+    display: flex;
+}
+
+.logo_flex button {
+    background: rgba(255, 255, 255, 0.0001);
+    border: none;
+}
+
+.db_logo {
+    padding: 0 1rem;
+    border-right: 1px solid #C1C7D0;
+}
+
+.dashboard_nav_flex p {
+    padding-left: 0.8rem;
+    color: #091E42;
+    font-size: 14px;
+}
+
+.dashboard_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.dashboard_content_header {
+    margin-bottom: 2.2rem;
+}
+
+.dashboard_content_header h1 {
+    font-size: 2.2rem;
+    color: #091E42;
+}
+
+.dashboard_content_header p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.task_list h3 {
+    font-weight: bold;
+    font-size: 1.5rem;    
+    color: #172B4D;
+    margin-bottom: 1rem;
+}
+
+.dashboard_task_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 1px;
+    margin-bottom: 0.7rem;
+    padding: 1rem;
+}
+
+.task_cicle{
+    width: 32px;
+    height: 32px;
+    margin-right: 0.6rem;
+}
+
+.task_list_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard_task_list p {
+    font-size: 0.875rem;    
+}
+
+.action {
+    color: #0052CC;
+    cursor: pointer;
+}
+
+.task_btn {
+    background: rgba(9, 30, 66, 0.04);
+    mix-blend-mode: normal;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #42526E;
+    border: none;
+    padding: 6px 12px;
+}

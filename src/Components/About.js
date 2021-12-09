@@ -7,7 +7,7 @@ import aboutImage from './Assets/employee_directory.png';
 
 function About() {
     return (
-        <section className="about">
+        <section className="about" id="about">
             <div className="about_container">
                 <div className="about_title">
                     <h1>

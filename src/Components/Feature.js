@@ -13,10 +13,7 @@ import sampleImage2 from './Assets/sampleImage.svg';
 function Feature() {
     return (
         <>
-            <section className="feature">
-            {/* <div >
-                
-            </div> */}
+            <section className="feature" id="feature">
 
             <div className="feature_title_grid">
                 <div className="feature_title">
