@@ -5,6 +5,8 @@ import logo from './Assets/logo_svg.svg';
 import {Link} from 'react-router-dom';
 
 const PasswordInput = () => {
+    const item = localStorage.getItem("email");
+    const userEmail = JSON.parse(item);
     return (
         <section className="login">
             <div>
@@ -27,8 +29,11 @@ const PasswordInput = () => {
 
                     <div className="login_details">
                         <div>
+                            <h5>
+                                
+                            </h5>
                             <h4>
-                                Ositadinma Nwangwu
+                                {userEmail}
                             </h4>
                             <p>
                                 o.nwangwu@genesystechclub.com

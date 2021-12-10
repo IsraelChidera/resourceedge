@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
+import {useHistory} from 'react-router-dom';
 import './Css/Login.css';
 import authImg from './Assets/auth_design.svg';
 import logo from './Assets/logo_svg.svg';
 import {Link} from 'react-router-dom';
 
 const Login = () => {
+    const history = useHistory();
+    
+    const [email, setEmail] = useState("");
+    const handleClick = (e) => {
+        
+        e.preventDefault();
+        localStorage.setItem("email", JSON.stringify(email));
+        history.push("/passwordInput");
+    }
+
     return (
         <section className="login">
             <div>
@@ -31,19 +42,23 @@ const Login = () => {
                         </label>
 
                         <input 
-                            type="text"
+                            type="email"
                             placeholder="Enter email"
+                            // value={email}
+                            onChange={(e)=>setEmail(e.target.value)}
                         />
                     </div>
 
                     <div>
-                        <Link to="/passwordInput">
+                        {/* <Link to="#"> */}
+                        {/* /passwordInput */}
                             <button
                                 className="login_btn"
+                                onClick={handleClick}
                             >                            
                                 Login                                                       
                             </button>
-                        </Link>
+                        {/* </Link> */}
                     </div>
 
                     <p className="forgot_pass">
@@ -55,6 +70,8 @@ const Login = () => {
                     </p>
                 </form>
             </div>
+
+            {/* {itemArray.map(x => (<h1>x</h1>))} */}
 
             <img
                 src={authImg}
