@@ -61,3 +61,29 @@
 .about_img {
     text-align: center;
 }
+
+
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .about {       
+        display: block;
+    }
+    
+    .about_box_details {
+        display: block;       
+        padding: 2rem 2rem;
+    }
+
+    .box-details-content {
+        margin-top: 1rem;
+    }
+
+    .about_title {        
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .about_img img {
+        width: 100%;
+    }
+}

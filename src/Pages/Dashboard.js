@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Components/Css/Dashboard.css';
 import profileIcon from '../Components/Assets/profile_icon.svg';
 import logo from '../Components/Assets/nav_logo.svg';
 import taskCircle from '../Components/Assets/empty_circle.svg';
+import tm from '../Components/Assets/tm.png';
+import tm2 from '../Components/Assets/tm2.png';
 import { Link } from 'react-router-dom';
 
-const Dashboard = () => {
+const Dashboard = () => { 
+    const [click, setClick] = useState(false);
+
+    const handleClick = () => {
+        setClick(!click);
+        
+    }
+
     return (
         <section className="dashboard">
             <div className="dashboard_nav">
@@ -28,8 +37,61 @@ const Dashboard = () => {
                     </p>
                 </div>
 
-                <div>
+                <div
+                    onClick={handleClick} 
+                    style={{cursor: "pointer"}}
+                >
                     <img src={profileIcon} />
+                </div>
+            </div>
+
+            <div 
+                // className={ click ? "nav_list": "none"}   
+                className={ click ? "dashboard_dropdown": "none2"} 
+                // className="dashboard_dropdown"
+            >
+                <div className="dashboard_dropdown_container">
+                    <div>
+                        <h2>
+                            Ositadinma Nwangwu
+                        </h2>
+                        <p style={{fontSize: "14px"}}>
+                            Profile
+                        </p>
+                    </div>
+
+                    <div style={{paddingTop: "1.75rem"}}>
+                        <p style={{paddingBottom: "0.7rem", fontSize: "12px"}}>
+                            Use Resource Edge as 
+                        </p>
+                        <div className="tm_container">
+                            <img 
+                                src={tm}
+                                alt="Employee icon"
+                                className="tm"
+                            />
+                            <p>
+                                Employee
+                            </p>
+                        </div>
+
+                        <div className="tm_container">
+                            <img 
+                                src={tm2}
+                                alt="Talent Manager icon"
+                                className="tm"
+                            />
+                            <p>
+                                Talent Manager
+                            </p>
+                        </div>
+
+                        <div className="logout">
+                            <Link to="/auth">
+                                Logout
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
 

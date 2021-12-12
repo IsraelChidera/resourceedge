@@ -100,6 +100,7 @@
     top: -40px;
     right: 0;
     z-index: -1;
+    max-width: 100%;
 }
 
 .background_layer5 {
@@ -111,3 +112,40 @@
     /* height: 100px; */
 } 
 
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .feature_title_grid, .feature_title_grid_2 {
+        display: block;     
+        padding: 6rem 1rem 2rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .feature_title, .feature_title_2{
+        margin-bottom: 1rem;
+    }
+
+    .feature_title_grid div {
+        margin-bottom: 1rem;
+    }
+
+    .feature_tab {
+        padding: 2rem;
+    }
+
+    .feature_sampleImg {
+        width: 100%;
+    }
+
+    
+    .background_layer2,
+    .background_layer4,
+    .background_layer6 {
+        left: 0;
+    }
+
+    .background_layer,
+    .background_layer3,
+    .background_layer5 {
+        display: none;
+    }
+}

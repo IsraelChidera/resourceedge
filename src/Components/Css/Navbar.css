@@ -3,7 +3,7 @@ nav {
     justify-content: space-between;
     padding: 1.2rem 7rem;
 }
-
+ 
 ul {
     list-style: none;
 }
@@ -37,6 +37,11 @@ nav .first_nav_section div{
     padding: 0 0.5rem;
 }
 
+.none li {
+    padding: 0 0.5rem;
+}
+
+
 .logo_img {
     height: 24px;
     width: 154px;
@@ -46,7 +51,19 @@ nav .first_nav_section div{
     padding-left: 0.2rem;
 }
 
+.none .sign_in {
+    padding-left: 0.2rem;
+}
+
 .nav_list .sign_in a {
+    background: #0052CC;
+    padding: 10px 12px;
+    mix-blend-mode: normal;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.none .sign_in a {
     background: #0052CC;
     padding: 10px 12px;
     mix-blend-mode: normal;
@@ -59,3 +76,94 @@ nav .first_nav_section div{
     transition: all 0.3s ease-in;
     text-decoration: none;
 }
+
+.none .sign_in a:hover {
+    background: #091E42;
+    transition: all 0.3s ease-in;
+    text-decoration: none;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.none {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.none li a {
+    text-decoration: none;
+}
+
+.ham_icon {
+    display: none;
+}
+
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+    nav {
+        display: block;
+        padding: 1rem;
+    }
+
+    .nav_list {
+        display: block;
+    }
+
+    nav .first_nav_section {
+        display: block;
+    }
+
+    .logo_mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ham_icon {
+        display: block;
+    }
+
+    .nav_list li {
+        padding: 10px 12px;
+    }
+ 
+    .nav_list {
+        margin: 6rem 0;
+    }
+
+    .nav_list .sign_in a {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sign_in_mobile {
+        background: #F4F5F7;
+        padding: 11px 12px;
+        mix-blend-mode: normal;
+        border-radius: 4px;
+        text-align: center;
+    }
+    
+    .sign_in_mobile:hover {
+        background: #091E42;
+        color: #ffffff;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .homepage .homepage_details {
+        display: flex;
+        padding-top: 9rem;
+        padding-left: 7rem;
+        padding: 9rem 2rem 0rem 2rem;
+    }
+}
+  

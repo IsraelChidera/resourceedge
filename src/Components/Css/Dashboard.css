@@ -93,7 +93,7 @@
 
 .action {
     color: #0052CC;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .task_btn {
@@ -108,3 +108,59 @@
     border: none;
     padding: 6px 12px;
 }
+
+.dashboard_dropdown {
+    background: #eee;
+    padding: 4rem 1rem;
+    margin: 1rem;
+}
+
+.dashboard_dropdown_container h2{
+    color: #6B778C;
+    font-size: 12px;
+}
+
+.tm_container {
+    display: flex;
+}
+
+.tm {
+    padding-right: 0.7rem;
+}
+
+.tm_container {
+    font-size: 14px;
+}
+
+.logout {
+    margin-top: 1rem;
+    border-top: 1px solid black;
+}
+
+.logout a {
+    color: #172B4D;
+    text-decoration: none;
+    font-weight: 450;
+    font-size: 14px;
+}
+
+.logout a:hover {
+    color: #334;
+    font-weight: 600;
+}
+
+.none2 {
+    display: none;
+}
+
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .dashboard_content {        
+        padding: 1.5rem;
+    }
+
+    .dashboard_nav_flex p {
+        display: none;
+    }
+}
+  

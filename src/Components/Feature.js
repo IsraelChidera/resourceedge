@@ -26,7 +26,7 @@ function Feature() {
                     </p>
                 </div>
 
-                <div>
+                <div className="feature_tab">
                     <div className="feature">
                         <div>
                             <img 
@@ -47,7 +47,7 @@ function Feature() {
                     </div>
                 </div>
 
-                <div>
+                <div className="feature_tab">
                     <div className="feature">
                         <div>
                             <img 
@@ -73,6 +73,7 @@ function Feature() {
                 <img
                     src={sampleImage}
                     alt="employee directory image"
+                    className="feature_sampleImg"
                 />    
 
                 <img
@@ -120,7 +121,7 @@ function Feature() {
                         </p>
                     </div>
 
-                    <div>
+                    <div className="feature_tab">
                         <div className="feature_2">
                             <div>
                                 <img 
@@ -142,9 +143,9 @@ function Feature() {
                         </div>
                     </div>
 
-                    <div>
+                    <div className="feature_tab">
                         <div className="feature_2">
-                            <div>
+                            <div> 
                                 <img 
                                     src={icon7}
                                     alt="asset management icon"
@@ -169,6 +170,7 @@ function Feature() {
                     <img
                         src={sampleImage2}
                         alt="employee directory image"
+                        className="feature_sampleImg"
                     />    
 
                     <img

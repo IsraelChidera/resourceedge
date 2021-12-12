@@ -23,6 +23,7 @@ const Sponsors = () => {
                             <img
                                 src={sponsor1}
                                 alt="UNN logo"
+                                className="sponsor_img"
                             />
                         </div>
 
@@ -30,6 +31,7 @@ const Sponsors = () => {
                             <img
                                 src={sponsor2}
                                 alt="Tenece logo"
+                                className="sponsor_img"
                             />
                         </div>
 
@@ -37,6 +39,7 @@ const Sponsors = () => {
                             <img
                                 src={sponsor3}
                                 alt="Private Estates logo"
+                                className="sponsor_img"
                             />
                         </div>
 
@@ -44,11 +47,12 @@ const Sponsors = () => {
                             <img
                                 src={sponsor4}
                                 alt="Genesys logo"
+                                className="sponsor_img"
                             />
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> 
         </>
     )
 }

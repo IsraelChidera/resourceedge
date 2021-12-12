@@ -28,3 +28,30 @@ footer {
 footer p {
     font-size: 14px;
 }
+
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+    footer {
+        background: #091E42;
+        padding: 2rem;
+        display: block;
+    }
+
+    .footer_logo {
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    .footer_socials {
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .footer_socials p {
+        text-align: center;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+}
