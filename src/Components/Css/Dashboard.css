@@ -162,5 +162,15 @@
     .dashboard_nav_flex p {
         display: none;
     }
+
+    
 }
   
+
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 500px) {
+    .dashboard_content_header h1 {
+        font-size: 1.2rem;
+        color: #091E42;
+    }
+}
