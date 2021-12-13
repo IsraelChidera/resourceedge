@@ -14,7 +14,7 @@ const PasswordInput = () => {
                     <Link to="/">
                         <img
                             src={logo}
-                            className="form_logo"
+                            className="form_logo" 
                         />
                     </Link>
                 </div>

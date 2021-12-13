@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom';
 
 const Dashboard = () => { 
     const [click, setClick] = useState(false);
+    const item = localStorage.getItem("email");
+    const userEmail = JSON.parse(item);
 
     const handleClick = () => {
         setClick(!click);
@@ -53,7 +55,7 @@ const Dashboard = () => {
                 <div className="dashboard_dropdown_container">
                     <div>
                         <h2>
-                            Ositadinma Nwangwu
+                            {userEmail}
                         </h2>
                         <p style={{fontSize: "14px"}}>
                             Profile
@@ -69,6 +71,7 @@ const Dashboard = () => {
                                 src={tm}
                                 alt="Employee icon"
                                 className="tm"
+                                style={{width: "auto"}}
                             />
                             <p>
                                 Employee
@@ -80,6 +83,7 @@ const Dashboard = () => {
                                 src={tm2}
                                 alt="Talent Manager icon"
                                 className="tm"
+                                style={{width: "auto"}}
                             />
                             <p>
                                 Talent Manager
@@ -99,7 +103,7 @@ const Dashboard = () => {
                 <div>
                     <div className="dashboard_content_header">
                         <h1>
-                            Hello, Ositadinma Nwangwu
+                            Hello, {userEmail}
                         </h1>
                         <p>
                             Welcome and good to have you back

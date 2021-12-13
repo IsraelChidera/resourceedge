@@ -44,21 +44,18 @@ const Login = () => {
                         <input 
                             type="email"
                             placeholder="Enter email"
-                            // value={email}
+                            value={email}
                             onChange={(e)=>setEmail(e.target.value)}
                         />
                     </div>
 
-                    <div>
-                        {/* <Link to="#"> */}
-                        {/* /passwordInput */}
-                            <button
-                                className="login_btn"
-                                onClick={handleClick}
-                            >                            
-                                Login                                                       
-                            </button>
-                        {/* </Link> */}
+                    <div>                
+                        <button
+                            className="login_btn"
+                            onClick={handleClick}
+                        >                            
+                            Login                                                       
+                        </button>                        
                     </div>
 
                     <p className="forgot_pass">
@@ -70,8 +67,6 @@ const Login = () => {
                     </p>
                 </form>
             </div>
-
-            {/* {itemArray.map(x => (<h1>x</h1>))} */}
 
             <img
                 src={authImg}
