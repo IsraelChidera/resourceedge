@@ -87,3 +87,13 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    img {
+        width: 100%;
+    }
+
+    .background_layer4 {
+        display: none;
+    }
+}

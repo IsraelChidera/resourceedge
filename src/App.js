@@ -8,6 +8,7 @@ import ResetSuccess from './Components/ResetSuccess';
 import PasswordReset from './Components/PasswordReset';
 import PasswordResetSuccess from './Components/PasswordResetSuccess';
 import Dashboard from './Pages/Dashboard';
+import './Components/circular-std-medium-500.ttf';
 
 function App() {
   return (

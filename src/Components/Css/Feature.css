@@ -130,13 +130,31 @@
 
     .feature_tab {
         padding: 2rem;
-    }
+    } 
 
     .feature_sampleImg {
         width: 100%;
     }
 
     
+    .background_layer2,
+    .background_layer4,
+    .background_layer6 {
+        left: 0;
+    }
+
+    .background_layer,
+    .background_layer3,
+    .background_layer5 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    img {
+        width: 100%;
+    }
+
     .background_layer2,
     .background_layer4,
     .background_layer6 {
