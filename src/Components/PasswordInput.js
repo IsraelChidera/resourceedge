@@ -40,9 +40,11 @@ const PasswordInput = () => {
                             </p>
                         </div>
 
-                        <button>
-                            <i className="fa fa-pencil"></i>
-                        </button>
+                        <Link to="/auth">
+                            <button>
+                                <i className="fa fa-pencil"></i>
+                            </button>
+                        </Link>
                     </div>
 
                     <div className="mail_input">
