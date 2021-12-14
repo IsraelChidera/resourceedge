@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import './Css/PasswordReset.css';
 import authImg from './Assets/auth_design.svg';
 import logo from './Assets/logo_svg.svg';
 import {Link} from 'react-router-dom';
 
 const PasswordReset = () => {
+    const [isLoading, setIsLoading] = useState(false);
+    const history = useHistory();
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+        setTimeout(() => {
+            setIsLoading(false);
+            history.push('/passwordresetsuccess')
+        }, 3000)
+    }
+
     return (
         <section className="login">
             <div>
@@ -49,13 +62,18 @@ const PasswordReset = () => {
                     </div>
 
                     <div>
-                        <Link to="/passwordresetsuccess">
-                            <button
+                        {/* <Link to="/passwordresetsuccess"> */}
+                            {isLoading ? (<button
+                                className="login_btn"                                
+                            >                            
+                                Resetting password . . .                                                      
+                            </button>) :(<button
                                 className="login_btn"
+                                onClick={handleClick}
                             >                            
                                 Reset password                                                       
-                            </button>
-                        </Link>
+                            </button>)}
+                        {/* </Link> */}
                     </div>
 
                     <p className="forgot_pass">

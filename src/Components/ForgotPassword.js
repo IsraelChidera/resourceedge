@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import './Css/ForgotPassword.css';
 import authImg from './Assets/auth_design.svg';
 import logo from './Assets/logo_svg.svg';
 import {Link} from 'react-router-dom';
 
 function ForgotPassword() {
+    const [isLoading, setIsLoading] = useState(false);
+    const history = useHistory();
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+        setTimeout(() => {
+            setIsLoading(false);
+            history.push('/passwordResetviaemail')
+        }, 3000)
+    }
+
     return (
         <section className="login">
             <div>
@@ -38,13 +51,18 @@ function ForgotPassword() {
                     </div>
 
                     <div>
-                        <Link to="/passwordResetviaemail">
-                            <button
+                        {/* <Link to="/passwordResetviaemail"> */}
+                            {isLoading ? (<button
+                                className="login_btn"                                
+                            >                            
+                                Sending email for password reset . . .                                                      
+                            </button>) :(<button
                                 className="login_btn"
+                                onClick={handleClick}
                             >                            
                                 Reset Password                                                       
-                            </button>
-                        </Link>
+                            </button>)}
+                        {/* </Link> */}
                     </div>
 
                     <p className="forgot_pass">

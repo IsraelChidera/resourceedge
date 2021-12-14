@@ -61,12 +61,12 @@ function Navbar() {
                     >
                         <li className="sign_in_mobile">
                             <Link 
-                                style={{color: '#A5ADBA'}}
                                 to="/auth"
+                                style={{color: '#A5ADBA'}}                                
                             >
                                 Sign up
                             </Link>
-                        </li>
+                        </li>            
 
                         <li className="sign_in">
                             <Link to="/auth">

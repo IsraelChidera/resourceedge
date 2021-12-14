@@ -7,13 +7,20 @@ import {Link} from 'react-router-dom';
 
 const Login = () => {
     const history = useHistory();
-    
+    const [isLoading, setIsLoading] = useState(false);
+
     const [email, setEmail] = useState("");
+
     const handleClick = (e) => {
-        
         e.preventDefault();
         localStorage.setItem("email", JSON.stringify(email));
-        history.push("/passwordInput");
+        
+
+        setIsLoading(true);
+        setTimeout(() => {
+            setIsLoading(false);
+            history.push("/passwordInput");
+        }, 3000)
     }
 
     return (
@@ -50,12 +57,16 @@ const Login = () => {
                     </div>
 
                     <div>                
-                        <button
+                        {isLoading ? (<button
+                            className="login_btn"                            
+                        >                            
+                            Loading...                                                     
+                        </button> ) : (<button
                             className="login_btn"
                             onClick={handleClick}
                         >                            
                             Login                                                       
-                        </button>                        
+                        </button> ) }                                         
                     </div>
 
                     <p className="forgot_pass">

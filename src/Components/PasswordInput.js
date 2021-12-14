@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import './Css/Passwordinput.css';
 import authImg from './Assets/auth_design.svg';
 import logo from './Assets/logo_svg.svg';
@@ -7,6 +8,18 @@ import {Link} from 'react-router-dom';
 const PasswordInput = () => {
     const item = localStorage.getItem("email");
     const userEmail = JSON.parse(item);
+    const [isLoading, setIsLoading] = useState(false);
+    const history = useHistory();
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+        setTimeout(() => {
+            setIsLoading(false);
+            history.push("/dashboard");
+        }, 3000)
+    }
+
     return (
         <section className="login">
             <div>
@@ -59,13 +72,18 @@ const PasswordInput = () => {
                     </div>
 
                     <div>
-                        <Link to="/dashboard">
-                            <button
+                        {/* <Link to="/dashboard"> */}
+                            {isLoading ? (<button
                                 className="login_btn"
                             >                            
+                                Logging In ...                                                       
+                            </button>) :(<button
+                                className="login_btn"
+                                onClick={handleClick}
+                            >                            
                                 Login                                                       
-                            </button>
-                        </Link>
+                            </button>)}
+                        {/* </Link> */}
                     </div>
 
                     <p className="forgot_pass">

@@ -30,16 +30,22 @@ footer p {
 }
 
 /* Extra small devices (phones, 768px and down) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 908px) {
     footer {
         background: #091E42;
         padding: 2rem;
         display: block;
+        text-align: center;
     }
 
     .footer_logo {
         margin-bottom: 4rem;
         text-align: center;
+    }
+
+    .footer_logo_img {
+        width: auto;
+        width: 270px;
     }
 
     .footer_socials {

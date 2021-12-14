@@ -34,3 +34,15 @@
     }
 
 }
+
+@media only screen and (max-width: 1210px) {
+    .sponsors_img_flexed {
+        grid-gap: 1rem;
+    }
+
+    .sponsor_img {
+        width: 146.5px;
+        height: 34.47px;
+    }
+
+}

@@ -24,7 +24,11 @@ function About() {
                     <div className="about_box_grid">
                         <div className="box-details-content">
                             <div>
-                                <img src={icon1} alt="about icon"/>
+                                <img 
+                                    src={icon1} 
+                                    alt="about icon"
+                                    className="about_icon"
+                                />
                             </div>
 
                             <h3>
@@ -42,7 +46,11 @@ function About() {
                     <div className="about_box_grid">
                         <div className="box-details-content">
                             <div>
-                                <img src={icon2} alt="about icon"/>
+                                <img 
+                                    src={icon2} 
+                                    alt="about icon"
+                                    className="about_icon"
+                                />
                             </div>
 
                             <h3>
@@ -59,7 +67,11 @@ function About() {
                     <div className="about_box_grid">
                         <div className="box-details-content">
                             <div>
-                                <img src={icon3} alt="about icon"/>
+                                <img 
+                                    src={icon3} 
+                                    alt="about icon"
+                                    className="about_icon"
+                                />
                             </div>
 
                             <h3>

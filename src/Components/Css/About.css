@@ -96,4 +96,16 @@
     .background_layer4 {
         display: none;
     }
+
+    .about_icon {
+        width: auto;
+    }
+
+    .about_box_details {
+        display: block;        
+    }
+
+    .box-details-content {       
+        margin: 1rem;
+    }
 }

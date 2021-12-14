@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom';
 
 const Dashboard = () => { 
     const [click, setClick] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+    
     const item = localStorage.getItem("email");
     const userEmail = JSON.parse(item);
 
