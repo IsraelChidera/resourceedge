@@ -10,7 +10,7 @@ import Footer from '../Components/Footer';
 function LandingPage() {
     return (
         <div>
-            <div className="app">
+            <div className="app fixes">
                 < Navbar />
                 < Homepage />
             </div>
